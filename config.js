@@ -16,10 +16,10 @@ global.owner = process.env.OWNER_NUMBER
 global.THUMB_IMAGE =
   process.env.THUMB_IMAGE ||
   process.env.IMAGE ||
-  "https://telegra.ph/file/17c8ba84a7761eed633f6.jpg,https://telegra.ph/file/7275967ae7b5283fada69.jpg";
+  "https://telegra.ph/file/82176ef2fe50e86d5475b.jpg";
 global.userImages =
   process.env.USER_IMAGES ||
-  "https://telegra.ph/file/7275967ae7b5283fada69.jpg,https://telegra.ph/file/c3049cd3ac77f371e119e.jpg,https://telegra.ph/file/a22200a780671e0e32383.jpg,https://telegra.ph/file/85fe388fdd14930cf86a0.jpg,https://telegra.ph/file/ba9ced500f9eca7db8acb.mp4";
+  "https://telegra.ph/file/82176ef2fe50e86d5475b.jpg";
 ///===========[global iMPORTS]====================//
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
-  caption: process.env.CAPTION || "`©MR_UPDATE_DATA `",
+  caption: process.env.CAPTION || "`©MR_UPDATE_DATA WA_BOT `",
   author: process.env.PACK_AUTHER || "MR_UPDATE_DATA",
   packname: process.env.PACK_NAME || "MAGEZI TONY WILSON",
   botname: process.env.BOT_NAME || "MAGEZI_TONY_WILSON",
@@ -35,7 +35,7 @@ module.exports = {
   errorChat: process.env.ERROR_CHAT || "",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "sk-proj-X7DoBq2WxaM7EbubOjAOT3BlbkFJo8RYkNeh8QjPvSCXhBtU",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   antilink_values: process.env.ANTILINK_VALUES || "all",
