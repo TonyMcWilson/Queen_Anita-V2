@@ -4,7 +4,7 @@ if (fs.existsSync(".env"))
   require("dotenv").config({ path: __dirname + "/.env" });
 
 //=======[dependencies]====================//
-global.SESSION_ID = process.env.SESSION_ID || "";
+global.SESSION_ID = process.env.SESSION_ID || "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSU9rTFlxUnJZSmZUeXE1THVQRlZXUzFEUmhZWGFNVGFkWDJwNDJpMjFsTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidG9Ia0lRaTQxdzExdVRTQkhCcnRlZFFZZzFGVnJ6dVkzK243c2VaNFlrWT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJlSlRRVUpQV1JRMVhuMGF5V1lBdVhRb3pSQm5mR0NGa2RLa0trb2svY2w0PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJrblkrRVoxQ2JjdzBqa3JGNmRES1NQLzFaSWo0bXhqQkFXMGFrSXc0M3lBPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImlFV3E2SldXWUhaTmV3TmZ3MnpTeTFqNWNHZGxycUN0OTFMTmlMZ01KbHM9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlZ2TkZ6U01IckV5STVZSkFxcjFaSEs5M3lCcmcrR3VJWFRkTUFGaE1uZ289In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS0R0bzJLa1pNUlF2SXQzbU5SVE9sL1BrejU0eUNieGRuQVY5VW9NekQwOD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTWhPU3loWVlNUnlwQUtYbTFTRTJ1VFp5ajNlY3JzVUtkSXRLdzdUMEtRcz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InJsL25xSUxvK3lmaDV2M1lPUGlqS1V4WE9HaHBIL2pSakkzRTJjQ0dXRHlMS3pvSW12R3FNYlUvL01HK2tBc1lvSTFodE1XVFhTZWwvQmxKTWtEWWhBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjA2LCJhZHZTZWNyZXRLZXkiOiIyK3hubkZJNWZ1a1Ewbjhtbk9NOXVXRmhyeWFBbjNSSTlxSUI1Z1FaeFlZPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJmSU16U1I0MVFJMkZoLWhEcUctWGRBIiwicGhvbmVJZCI6ImU0NTQxNDJkLTFmNDgtNDhkZC1hZDgyLTdlM2E1ZTgxYzQyNiIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ3ZnVQTjBCZTlQWm0rSVlQMFJPNkJVeUEwYWM9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRVdPbDcwbjhxdVE5ZkFILy9FaWxlMHg1VG1jPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IlBaTko3TFgzIiwibWUiOnsiaWQiOiIyNTY3NjMwODg4MjE6MTFAcy53aGF0c2FwcC5uZXQifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ0tIQnFQc0hFTHIyaGJRR0dBRWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6Im13S3ZyWjRYMkhVL3FPY1B6dmh1VUFQZEJTak11dkg3SnM2VjVnM3BPSFE9IiwiYWNjb3VudFNpZ25hdHVyZSI6IlEzQzgrUm0zSUd0QVBWc1NWeVNmWHBacmhTMkdlRXBUbHMwSE5TcFV2S2JrSkg4RlU5OWRvOWkwbUtUaWhrUUFqdkdhcTFYc01BRGtCeTZjL25XZUFBPT0iLCJkZXZpY2VTaWduYXR1cmUiOiJzblFwb3J4Sm1GZG9aNEdJU21vOEJ0MWVjZ1ltTUtSeHYzWlNUTEs1cmh4N1d1S0VRQmYya1dxQ3EzT1pjZ1IzeWhEZm1za051YVh1MnRiQnpOejNqQT09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjI1Njc2MzA4ODgyMToxMUBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJac0NyNjJlRjloMVA2am5EODc0YmxBRDNRVW96THJ4K3liT2xlWU42VGgwIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzE5NzYxNzM2LCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQUJIMyJ9";
 global.MONGODB = process.env.MONGODB_URI || "";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
 global.sudo = process.env.SUDO
@@ -12,14 +12,14 @@ global.sudo = process.env.SUDO
   : "null";
 global.owner = process.env.OWNER_NUMBER
   ? process.env.OWNER_NUMBER.replace(/[\s+]/g, "")
-  : "2349066528353";
+  : "256763088821";
 global.THUMB_IMAGE =
   process.env.THUMB_IMAGE ||
   process.env.IMAGE ||
-  "https://telegra.ph/file/17c8ba84a7761eed633f6.jpg,https://telegra.ph/file/7275967ae7b5283fada69.jpg";
+  "https://telegra.ph/file/82176ef2fe50e86d5475b.jpg";
 global.userImages =
   process.env.USER_IMAGES ||
-  "https://telegra.ph/file/7275967ae7b5283fada69.jpg,https://telegra.ph/file/c3049cd3ac77f371e119e.jpg,https://telegra.ph/file/a22200a780671e0e32383.jpg,https://telegra.ph/file/85fe388fdd14930cf86a0.jpg,https://telegra.ph/file/ba9ced500f9eca7db8acb.mp4";
+  "https://telegra.ph/file/82176ef2fe50e86d5475b.jpg";
 ///===========[global iMPORTS]====================//
 
 module.exports = {
@@ -27,11 +27,11 @@ module.exports = {
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
-  caption: process.env.CAPTION || "`©QUEEN_ANITA-V2`",
-  author: process.env.PACK_AUTHER || "QUEEN_ANITA-V2",
-  packname: process.env.PACK_NAME || "A N I T A",
-  botname: process.env.BOT_NAME || "QUEEN_ANITA-V2",
-  ownername: process.env.OWNER_NAME || "David Cyril",
+  caption: process.env.CAPTION || "`©MR_UPDATE_DATA WA_BOT`",
+  author: process.env.PACK_AUTHER || "MR_UPDATE_DATA",
+  packname: process.env.PACK_NAME || "MR_UPDATE_DATA_TWEAKS",
+  botname: process.env.BOT_NAME || "MR_UPDATE_DATA",
+  ownername: process.env.OWNER_NAME || "@MR_UPDATE_DATA",
   errorChat: process.env.ERROR_CHAT || "",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
@@ -47,24 +47,24 @@ module.exports = {
 };
 global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || "";
-global.email = "";
-global.location = "";
+global.email = "MrUpdateDataTweaks@gmail.com";
+global.location = "Uganda";
 global.allowJids = process.env.ALLOW_JID || "null";
 global.blockJids = process.env.BLOCK_JID || "null";
-global.timezone = process.env.TZ || process.env.TIME_ZONE || "Africa/Lagos";
+global.timezone = process.env.TZ || process.env.TIME_ZONE || "Africa/Nairobi";
 global.github = process.env.GITHUB || "https://github.com/DeeCeeXxx/QUEEN_ANITA-V2";
 global.gurl = process.env.GURL || "";
 global.website = process.env.GURL || "";
-global.devs = "2349066528353";
+global.devs = "256763088821";
 global.msg_style = process.env.STYLE || "4";
 global.session_reset = process.env.SS_RESET || "false";
 global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "false";
-global.warncount = process.env.WARN_COUNT || 3;
+global.warncount = process.env.WARN_COUNT || 50;
 global.disablepm = process.env.DISABLE_PM || "false";
 (global.disablegroup = process.env.DISABLE_GROUPS || "false"),
   (global.MsgsInLog = process.env.MSGS_IN_LOG || "true");
-global.waPresence = process.env.WAPRESENCE || "online";
+global.waPresence = process.env.WAPRESENCE || "typing";
 global.readcmds = process.env.READ_COMMAND || "false";
 global.readmessage = process.env.READ_MESSAGE || "false";
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null";
